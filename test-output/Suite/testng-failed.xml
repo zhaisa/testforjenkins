@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.jenkins.testforjenkins.Test01Test">
+        <methods>
+          <include name="startChrome"/>
+          <include name="openBaiDu"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.jenkins.testforjenkins.Test01Test -->
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.jenkins.testforjenkins.Test01Test">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="openBaiDu"/>
+          <include name="startChrome"/>
+        </methods>
+      </class> <!-- com.jenkins.testforjenkins.Test01Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
