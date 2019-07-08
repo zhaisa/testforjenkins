@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 public class Test01 {
 	public static WebDriver driver;
 	public static String url="http://www.baidu.com";
-@Test
+@Test(timeOut=4000)
    public void openBaiDu() {
 	   driver.findElement(By.linkText("新闻")).click();
 	   try {
