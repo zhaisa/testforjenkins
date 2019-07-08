@@ -4,7 +4,6 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.File;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,10 +17,10 @@ import org.testng.annotations.Test;
  */
 public class Test01 {
 	public static WebDriver driver;
-	public static String url="http://www.baidu.com";
+	public static String url="http://testhf.irongbei.com";
 @Test(timeOut=4000)
    public void openBaiDu() {
-	   driver.findElement(By.linkText("新闻")).click();
+//	   driver.findElement(By.linkText("新闻")).click();
 	   try {
 		Thread.sleep(2000);
 	} catch (InterruptedException e) {
@@ -29,7 +28,7 @@ public class Test01 {
 	}
 	   System.out.println(driver.getTitle());
 	
-	  assertEquals("百度新闻——海量中文资讯平台", driver.getTitle());
+	  assertEquals("融贝网官网_值得信赖的网络借贷信息中介平台", driver.getTitle());
 	
    }
    
