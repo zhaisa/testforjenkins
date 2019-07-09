@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
     <classes>
-      <class name="com.jenkins.testforjenkins.Test01Test"/>
+      <class name="com.jenkins.testforjenkins.Test01">
+        <methods>
+          <include name="startChrome"/>
+          <include name="openBaiDu"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.jenkins.testforjenkins.Test01 -->
     </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test -->
+</suite> <!-- Failed suite [Suite] -->
