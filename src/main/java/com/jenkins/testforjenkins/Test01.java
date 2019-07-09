@@ -31,7 +31,7 @@ public class Test01 {
 		e.printStackTrace();
 	}
 	   System.out.println(driver.getTitle());
-	   System.out.println(username);
+	   System.out.println(username+"这是历史性的胜利");
 	
 	  assertEquals("融贝网官网_值得信赖的网络借贷信息中介平台", driver.getTitle());
 	
