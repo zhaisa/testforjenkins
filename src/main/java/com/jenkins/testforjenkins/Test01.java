@@ -9,7 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import com.beust.jcommander.Parameter;
 
 /**
  * Hello world!
@@ -18,8 +21,9 @@ import org.testng.annotations.Test;
 public class Test01 {
 	public static WebDriver driver;
 	public static String url="http://testhf.irongbei.com";
+@Parameters({"username"})
 @Test(timeOut=4000)
-   public void openBaiDu() {
+   public void openBaiDu(String username) {
 //	   driver.findElement(By.linkText("新闻")).click();
 	   try {
 		Thread.sleep(2000);
@@ -27,6 +31,7 @@ public class Test01 {
 		e.printStackTrace();
 	}
 	   System.out.println(driver.getTitle());
+	   System.out.println(username);
 	
 	  assertEquals("融贝网官网_值得信赖的网络借贷信息中介平台", driver.getTitle());
 	
