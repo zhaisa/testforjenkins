@@ -16,7 +16,7 @@ import org.testng.annotations.Parameters;
  *
  */
 public class WebSuite extends TestBase {
-	protected static Locator locator = null;
+	
 	protected static WebDriver driver = null;
 	protected static API api = null;
 	protected CheckPoint cp = null;
