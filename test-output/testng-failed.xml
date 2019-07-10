@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="username" value="Administrator"/>
+  <listeners>
+    <listener class-name="listener.TestNGListener"/>
+    <listener class-name="listener.RetryListener"/>
+  </listeners>
   <test name="Test">
     <classes>
       <class name="com.jenkins.testforjenkins.Test01">
         <methods>
-          <include name="startChrome"/>
           <include name="openBaiDu"/>
-          <include name="closeDriver"/>
         </methods>
       </class> <!-- com.jenkins.testforjenkins.Test01 -->
     </classes>

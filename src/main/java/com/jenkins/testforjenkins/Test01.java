@@ -14,13 +14,14 @@ import org.testng.annotations.Test;
 
 import com.beust.jcommander.Parameter;
 
+import base.WebSingle;
+
 /**
  * Hello world!
  *
  */
-public class Test01 {
-	public static WebDriver driver;
-	public static String url="http://testhf.irongbei.com";
+public class Test01 extends WebSingle {
+	
 @Parameters({"username"})
 @Test(timeOut=4000)
    public void openBaiDu(String username) {
@@ -33,24 +34,11 @@ public class Test01 {
 	   System.out.println(driver.getTitle());
 	   System.out.println(username+"这是历史性的胜利");
 	
-	  assertEquals("融贝网官网_值得信赖的网络借贷信息中介平台", driver.getTitle());
-	
+//	 assertEquals("融贝网官网_值得信赖的网络借贷信息中介平台", driver.getTitle());
+	   cp.equals("融贝网官网_值得信赖的网络借贷信息中介平台", driver.getTitle());
+	   cp.result("完美运行成功");
    }
    
-@BeforeClass
-public void startChrome() {
-	File f=new File("src/main/resources/chromedriver.exe");
-	System.setProperty("webdriver.chrome.driver", f.getAbsolutePath());
-	ChromeOptions options=new ChromeOptions();
-	options.addArguments("--start-maximized","allow-running-insecure-content","--test-type");
-	options.addArguments("disable-infobars");
-	driver=new ChromeDriver(options);
-	driver.get(url);
-}
-@AfterClass
-public void closeDriver() {
-	driver.close();
-	driver.quit();
-}
+
 
 }

@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.jenkins.testforjenkins.Test01" hash-for-method="openBaiDu">openBaiDu</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.jenkins.testforjenkins.Test01" hash-for-method="openBaiDu(Administrator)">openBaiDu(Administrator)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +125,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="openBaiDu">
-                  </a> <!-- openBaiDu -->
+                  <a name="openBaiDu(Administrator)">
+                  </a> <!-- openBaiDu(Administrator) -->
                   <span class="method-name">openBaiDu</span>
+                  <span class="parameters">(Administrator)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,13 +143,16 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;parameter name=&quot;username&quot; value=&quot;Administrator&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listener.TestNGListener&quot;/&gt;
+    &lt;listener class-name=&quot;listener.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.jenkins.testforjenkins.Test01&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;startChrome&quot;/&gt;
           &lt;include name=&quot;openBaiDu&quot;/&gt;
-          &lt;include name=&quot;closeDriver&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.jenkins.testforjenkins.Test01 --&gt;
     &lt;/classes&gt;
@@ -194,7 +198,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'openBaiDu')
 data.setCell(0, 2, 'com.jenkins.testforjenkins.Test01')
-data.setCell(0, 3, 2038);
+data.setCell(0, 3, 2079);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -210,6 +214,12 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">openBaiDu(Administrator)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test01：完美运行成功</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -226,18 +236,26 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.jenkins.testforjenkins.Test01</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">startChrome</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">448 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">openBaiDu</span>
-                <span class="method-start">13855 ms</span>
+                <span class="method-name">openBaiDu(Administrator)</span>
+                <span class="method-start">14153 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">15896 ms</span>
+                <span class="method-start">16826 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">19577 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
