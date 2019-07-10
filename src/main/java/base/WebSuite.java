@@ -26,7 +26,7 @@ public class WebSuite extends TestBase {
 	@BeforeTest  //所有测试（suite.xml文件里的那个test）开始之前执行，new一个浏览器，new一个api，new一个locator
 	@Parameters({ "browserType" })  //启什么浏览器就配置在suite.xml文件里（使用@Parameters注解）
 	public void setup(String browserType) {
-		driver = DriverFactory.getDriver(browserType);
+//		driver = DriverFactory.getDriver(browserType);
 //		api = new API(driver);
 //		locator = new Locator(driver, "object_yuansuduixiangku.xml", 30, 30);
 	}
