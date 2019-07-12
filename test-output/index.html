@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\workspace\testforjenkins\testng-test01.xml</span>
+                    <span>D:\workspace\testforjenkins\testng-test02.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -136,7 +136,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\workspace\testforjenkins\testng-test01.xml</span>
+            <span class="header-content">D:\workspace\testforjenkins\testng-test02.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,8 +145,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;parameter name=&quot;username&quot; value=&quot;Administrator&quot;/&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;listener.TestNGListener&quot;/&gt;
-    &lt;listener class-name=&quot;listener.RetryListener&quot;/&gt;
+    &lt;listener class-name=&quot;listener.ExtentTestNGIReporterListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
@@ -198,7 +197,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'openBaiDu')
 data.setCell(0, 2, 'com.jenkins.testforjenkins.Test01')
-data.setCell(0, 3, 2079);
+data.setCell(0, 3, 2215);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -242,19 +241,19 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">startChrome</span>
-                <span class="method-start">448 ms</span>
+                <span class="method-start">517 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">openBaiDu(Administrator)</span>
-                <span class="method-start">14153 ms</span>
+                <span class="method-start">14745 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">16826 ms</span>
+                <span class="method-start">16973 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">19577 ms</span>
+                <span class="method-start">18172 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

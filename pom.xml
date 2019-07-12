@@ -124,6 +124,7 @@
 				  </systemPropertyVariables>
           				<suiteXmlFiles>
           				<suiteXmlFile>${xmlfile}</suiteXmlFile>
+          				<suiteXmlFile>testng-test02.xml</suiteXmlFile>
           				</suiteXmlFiles>
        			 </configuration>
 			</plugin>

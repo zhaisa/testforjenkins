@@ -3,8 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="username" value="Administrator"/>
   <listeners>
-    <listener class-name="listener.TestNGListener"/>
-    <listener class-name="listener.RetryListener"/>
+    <listener class-name="listener.ExtentTestNGIReporterListener"/>
   </listeners>
   <test name="Test">
     <classes>
