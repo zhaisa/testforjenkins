@@ -1,46 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[Test01：完美运行成功]]>
+      <![CDATA[Test02：完美运行成功]]>
+    </line>
+    <line>
+      <![CDATA[Test02：完美运行成功]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="17615" started-at="2019-07-12T05:37:24Z" finished-at="2019-07-12T05:37:41Z">
+  <suite name="Default suite" duration-ms="19965" started-at="2019-07-15T07:17:21Z" finished-at="2019-07-15T07:17:41Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="17615" started-at="2019-07-12T05:37:24Z" finished-at="2019-07-12T05:37:41Z">
-      <class name="com.jenkins.testforjenkins.Test01">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.jenkins.testforjenkins.Test01@4f970963]" name="beforeSuite" is-config="true" duration-ms="506" started-at="2019-07-12T13:37:23Z" finished-at="2019-07-12T13:37:24Z">
+    <test name="Default test" duration-ms="19965" started-at="2019-07-15T07:17:21Z" finished-at="2019-07-15T07:17:41Z">
+      <class name="com.jenkins.testforjenkins.Test02">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.jenkins.testforjenkins.Test02@2b2948e2]" name="beforeSuite" is-config="true" duration-ms="410" started-at="2019-07-15T15:17:21Z" finished-at="2019-07-15T15:17:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="startChrome()[pri:0, instance:com.jenkins.testforjenkins.Test01@4f970963]" name="startChrome" is-config="true" duration-ms="14192" started-at="2019-07-12T13:37:24Z" finished-at="2019-07-12T13:37:38Z">
+        <test-method status="PASS" signature="startChrome()[pri:0, instance:com.jenkins.testforjenkins.Test02@2b2948e2]" name="startChrome" is-config="true" duration-ms="13899" started-at="2019-07-15T15:17:21Z" finished-at="2019-07-15T15:17:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startChrome -->
-        <test-method status="PASS" signature="openBaiDu(java.lang.String)[pri:0, instance:com.jenkins.testforjenkins.Test01@4f970963]" name="openBaiDu" duration-ms="2215" started-at="2019-07-12T13:37:38Z" finished-at="2019-07-12T13:37:40Z">
+        <test-method status="PASS" signature="openBaiDu(java.util.Map)[pri:0, instance:com.jenkins.testforjenkins.Test02@2b2948e2]" name="openBaiDu" duration-ms="2145" started-at="2019-07-15T15:17:36Z" data-provider="getdata" finished-at="2019-07-15T15:17:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Administrator]]>
+                <![CDATA[{测试3=ghk, 测试2=def, 测试1=abc}]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Test01：完美运行成功]]>
+              <![CDATA[Test02：完美运行成功]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBaiDu -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.jenkins.testforjenkins.Test01@4f970963]" name="closeDriver" is-config="true" duration-ms="1146" started-at="2019-07-12T13:37:40Z" finished-at="2019-07-12T13:37:41Z">
+        <test-method status="PASS" signature="openBaiDu(java.util.Map)[pri:0, instance:com.jenkins.testforjenkins.Test02@2b2948e2]" name="openBaiDu" duration-ms="2036" started-at="2019-07-15T15:17:38Z" data-provider="getdata" finished-at="2019-07-15T15:17:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{测试3=789, 测试2=456, 测试1=123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test02：完美运行成功]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBaiDu -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.jenkins.testforjenkins.Test02@2b2948e2]" name="closeDriver" is-config="true" duration-ms="946" started-at="2019-07-15T15:17:40Z" finished-at="2019-07-15T15:17:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.jenkins.testforjenkins.Test01@4f970963]" name="afterSuite" is-config="true" duration-ms="417" started-at="2019-07-12T13:37:41Z" finished-at="2019-07-12T13:37:42Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.jenkins.testforjenkins.Test02@2b2948e2]" name="afterSuite" is-config="true" duration-ms="276" started-at="2019-07-15T15:17:41Z" finished-at="2019-07-15T15:17:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.jenkins.testforjenkins.Test01 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.jenkins.testforjenkins.Test02 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
